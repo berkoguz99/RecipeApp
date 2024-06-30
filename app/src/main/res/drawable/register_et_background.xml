@@ -1,0 +1,7 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <!-- Köşe yuvarlama için radius belirtin -->
+    <corners android:radius="8dp"/>
+    <!-- Arka plan rengini belirtin -->
+    <solid android:color="#E0E4E8"/> <!-- Örneğin gri renk -->
+</shape>

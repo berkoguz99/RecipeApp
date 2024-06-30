@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.FirstScreenActivity">
+
+
+
+    <ImageView
+        android:id="@+id/first_img_view"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_325sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/first_img"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/first_img_view"
+        app:layout_constraintStart_toStartOf="@id/first_img_view"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingTop="@dimen/_16sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Cooking"
+            android:textStyle="bold"
+            android:textSize="@dimen/_20sdp"
+            android:textColor="@color/black"
+            />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_16sdp"/>
+
+
+        <TextView
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:text="Let’s join our community to cook better food!"
+            android:textStyle="normal"
+            android:textSize="@dimen/_15sdp"
+            android:textAlignment="center"
+            />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_10sdp"/>
+
+
+
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/login_button"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_35sdp"
+                android:src="@drawable/empty_background_btn"
+                android:background="@android:color/transparent"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Log In"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+        </FrameLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_7sdp"/>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/signin_button"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_35sdp"
+                android:src="@drawable/empty_background_btn"
+                android:background="@android:color/transparent"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+        </FrameLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "417350976282",
+    "project_id": "myreciple",
+    "storage_bucket": "myreciple.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:417350976282:android:187a6e750f0f12f60922a3",
+        "android_client_info": {
+          "package_name": "com.example.myrecipe"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdcAE3q-Tbw-a7mLJV9lUxX08rps5bSjo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

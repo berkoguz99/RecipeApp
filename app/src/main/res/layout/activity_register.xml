@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.RegisterActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linear_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_25sdp"/>
+
+        <TextView
+            android:paddingStart="@dimen/_16sdp"
+            android:layout_width="@dimen/_240sdp"
+            android:layout_height="wrap_content"
+            android:text="Hello! Register to get started"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_20sdp"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_25sdp"/>
+
+        <EditText
+            android:id="@+id/reg_name"
+            android:paddingStart="@dimen/_8sdp"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:hint="Name"
+            android:paddingTop="@dimen/_1sdp"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:background="@drawable/register_et_background"
+            />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_10sdp"/>
+
+        <EditText
+            android:id="@+id/reg_surname"
+
+            android:paddingStart="@dimen/_8sdp"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:hint="Surname"
+            android:paddingTop="@dimen/_1sdp"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:background="@drawable/register_et_background"
+            />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_10sdp"/>
+
+        <EditText
+            android:id="@+id/reg_username"
+
+            android:paddingStart="@dimen/_8sdp"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:hint="Username"
+            android:paddingTop="@dimen/_1sdp"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:background="@drawable/register_et_background"
+            />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_10sdp"/>
+
+        <EditText
+            android:id="@+id/reg_email"
+
+            android:paddingStart="@dimen/_8sdp"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:hint="Email"
+
+            android:paddingTop="@dimen/_1sdp"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:background="@drawable/register_et_background"
+            />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_10sdp"/>
+
+        <EditText
+            android:id="@+id/reg_password"
+
+            android:paddingStart="@dimen/_8sdp"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:hint="Password"
+
+            android:paddingTop="@dimen/_1sdp"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:background="@drawable/register_et_background"
+            android:inputType="textPassword"
+
+            />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_10sdp"/>
+
+        <EditText
+            android:id="@+id/reg_password_confirm"
+
+            android:paddingStart="@dimen/_8sdp"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:hint="Confirm Password"
+
+            android:paddingTop="@dimen/_1sdp"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:background="@drawable/register_et_background"
+            android:inputType="textPassword"
+
+            />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_20sdp"/>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/save_button"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_35sdp"
+                android:src="@drawable/empty_background_btn"
+                android:background="@android:color/transparent"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingBottom="@dimen/_16sdp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Already have an account?"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/register_link_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text=" Login Now"
+            android:textColor="@color/green"/>
+
+
+</LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

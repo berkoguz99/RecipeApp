@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ContactFragment"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/contactTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Us"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/contactContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This is the privacy policy content. It describes how we handle your data..."
+            android:textSize="16sp"
+            android:lineSpacingExtra="4dp" />
+
+        <!-- Ek TextView'lar eklemek isterseniz burada ekleyebilirsiniz -->
+    </LinearLayout>
+
+</FrameLayout>
